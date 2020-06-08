@@ -1,0 +1,16 @@
+{
+    "name": "artem/framework",
+    "authors": [
+        {
+            "name": "Артем Соколов (ОдноРукий)",
+            "email": "sokolovartem6@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Controllers\\": "controllers/"
+        }
+    }
+}
