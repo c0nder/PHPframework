@@ -9,9 +9,7 @@
         public function __construct()
         {
             $this->setQuery();
-
             $this->setURI();
-
             $this->setRequestMethod();
         }
 

@@ -1,10 +1,11 @@
 <?php
-
     namespace Controllers;
+
+    use App\View;
 
     class TestController {
         public function test () {
-            echo "hello!";
+            View::render();
         }
 
         public function user($user_id) {
