@@ -11,7 +11,7 @@
             $route->requestMethod = mb_strtoupper($requestMethod);
 
             $route->controller = new Controller();
-            $route->controller->setClassName($controllerSettings[0]);
+            $route->controller->setInstance($controllerSettings[0]);
             $route->controller->setMethod($controllerSettings[1]);
 
             $route->setPath($path);
@@ -38,7 +38,7 @@
             $route = static::getRoute($request->getURI());
 
             if ($route && $route->requestMethod == $request->getRequestMethod()) {
-                $route->controller->call($route->arguments);
+                $route->controller->dispatch($route->arguments);
             }
         }
     }
